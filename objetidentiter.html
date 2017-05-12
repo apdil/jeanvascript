@@ -15,9 +15,17 @@
         personne.genre = "M";
         personne.adresse = { pays : "france", ville : "Villeurbanne"};
         personne.adresse.ville = "Vienne";
+        personne.nomAnimaux = ["cathy", "pomme", "max"];
+        personne.salut = function(){
+            console.log("coucou");
+        };
         for(let i = 0; i < Object.keys(personne).length ; i++){
             console.log(personne[Object.keys(personne)[i]])
         }
+        for(let i = 0; i < personne.nomAnimaux.length ; i++){
+            console.log(personne.nomAnimaux[i]);
+        }
+        personne.salut();
     </script>
 </body>
 </html>
