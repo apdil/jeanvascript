@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let personne = new Object();
+        personne.nom = "aydinalp";
+        personne.prenom = "apdil"; 
+        personne.age = 21;
+        personne.genre = "M";
+        personne.adresse = { pays : "france", ville : "Villeurbanne"};
+        personne.adresse.ville = "Vienne";
+        for(let i = 0; i < Object.keys(personne).length ; i++){
+            console.log(personne[Object.keys(personne)[i]])
+        }
+    </script>
+</body>
+</html>
